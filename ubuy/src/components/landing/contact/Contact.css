@@ -1,0 +1,194 @@
+.contact-wrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form {
+  width: 1000px;
+  height: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--background-secondary);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--text-primary);
+}
+
+.contact-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-form .contact-field {
+  position: relative;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-form .contact-field label {
+  font-size: 20px;
+}
+
+.contact-form .contact-field .input-area {
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--text-secondary);
+  outline: none;
+  font-size: 18px;
+  transition: 0.2s all ease;
+  border-radius: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: var(--text-primary);
+  font-family: "Rubik", sans-serif;
+}
+
+.contact-form .contact-field input {
+  height: 45px;
+}
+
+.contact-form .contact-field .input-area:focus {
+  border: 1px solid var(--text-primary);
+}
+
+.long {
+  position: relative;
+  width: 100% !important;
+}
+
+textarea {
+  resize: vertical;
+  padding-top: 10px;
+}
+
+.submit-contact {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  background-color: var(--background-primary);
+  border-radius: 5px;
+  color: var(--text-primary);
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid var(--text-primary);
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.submit-contact:hover {
+  background-color: var(--text-primary);
+  color: var(--background-primary);
+}
+
+.findus-wrapper {
+  position: relative;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-secondary);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+  border: 1px solid var(--text-primary);
+}
+
+.findus-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.findus-blocks .findus-block {
+  position: relative;
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--text-primary);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.findus-blocks .findus-block .icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.findus-blocks .findus-block .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.findus-blocks .findus-block .desc {
+  font-size: 20px;
+}
+
+.contact-splitter {
+  width: 80%;
+  text-align: center;
+  border-bottom: 2px solid var(--text-secondary);
+  line-height: 0.1em;
+  margin: 10px 0 10px;
+}
+
+.contact-splitter span {
+  background-color: var(--background-primary);
+  padding: 0 10px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact-form,
+  .findus-wrapper {
+    width: 600px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-form .contact-field {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-form,
+  .findus-wrapper {
+    width: 350px;
+  }
+
+  .submit-contact {
+    width: 100%;
+  }
+}
